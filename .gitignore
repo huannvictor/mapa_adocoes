@@ -10,6 +10,7 @@ logs/
 # Ignora tudo dentro de data, mas mantém as pastas básicas e os arquivos .gitkeep
 # Permite a pasta samples para demonstração
 !data/samples/
+!data/samples/output/*
 data/input/*
 data/output/*
 !data/input/.gitkeep
