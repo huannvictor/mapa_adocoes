@@ -7,8 +7,6 @@ venv/
 
 # Project specific
 logs/
-data/output/
-*.xlsx
 
 # OS stuff
 .DS_Store
