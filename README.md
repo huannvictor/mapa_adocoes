@@ -24,8 +24,11 @@ Este projeto implementa um fluxo de **RPA (Robotic Process Automation)** que eli
 ```text
 mapa-adocoes/
 ├── data/                   # Centraliza todos os arquivos de dados
-│   ├── input/              # Coloque aqui as pastas com os PDFs (ex: 2026_01_13_relacao_escolas/)
-│   └── output/             # Local onde os arquivos Excel (.xlsx) são gerados
+│   ├── input/              # [🔐 privado] Coloque aqui as pastas com os PDFs
+│   ├── output/             # [🔐 privado] Local onde os arquivos Excel (.xlsx) são gerados
+│   └── samples/            # 📂 Arquivos de exemplo para teste e demonstração
+│       ├── input/          # Exemplo de estrutura de PDFs fictícios
+│       └── output/         # Simulação do resultado consolidado
 ├── src/                    # Código-fonte principal
 │   ├── main.py             # Ponto de entrada (CLI)
 │   ├── core.py             # Lógica de extração e processamento de PDF
@@ -40,8 +43,8 @@ mapa-adocoes/
 
 ### Pré-requisitos
 
-- Python 3.8+ instalado.
-- Dependências instaladas: `pip install -r requirements.txt`
+* Python 3.8+ instalado.
+* Dependências instaladas: `pip install -r requirements.txt`
 
 ### Modo Automático (Windows)
 
@@ -58,13 +61,24 @@ python -m src.main data/input/NOME_DA_PASTA
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Python**: Linguagem base.
-- **pdfplumber**: Extração de texto robusta de PDFs.
-- **Pandas**: Manipulação de dados e exportação para Excel.
-- **Concurrent Futures**: Processamento paralelo para máxima performance.
-- **Logging**: Registro detalhado de sucessos e erros.
+* **Python**: Linguagem base.
+* **pdfplumber**: Extração de texto robusta de PDFs.
+* **Pandas**: Manipulação de dados e exportação para Excel.
+* **Concurrent Futures**: Processamento paralelo para máxima performance.
+* **Logging**: Registro detalhado de sucessos e erros.
 
-## 💾 Destaques Técnicos:
+## 🤖 Desenvolvimento Aumentado por IA (AI-Assisted)
+
+Este projeto foi desenvolvido utilizando uma abordagem moderna de engenharia de software, onde utilizei ferramentas de **Inteligência Artificial (LLMs)** como co-piloto estratégico para:
+
+* **Arquitetura e Lógica:** Tradução de requisitos de negócio em algoritmos eficientes de extração de dados.
+* **Implementação de Regex:** Criação de padrões complexos de Expressões Regulares para captura precisa em documentos não estruturados.
+* **Otimização Técnica:** Implementação de processamento paralelo e tratamento de erros guiado por boas práticas sugeridas por IA.
+* **Curadoria e Validação:** Capacidade de orquestrar ferramentas avançadas para entregar uma solução profissional, demonstrando agilidade e foco na resolução de problemas, mesmo em tecnologias além do meu domínio principal.
+
+Essa metodologia demonstra minha competência em adotar novas tecnologias de produtividade para entregar resultados escaláveis e precisos em tempo recorde.
+
+## 💾 Destaques Técnicos
 
 * **Processamento de Alto Desempenho**: Utiliza `concurrent.futures` para processar múltiplos PDFs em paralelo, reduzindo drasticamente o
   tempo de execução.
