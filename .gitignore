@@ -7,6 +7,14 @@ venv/
 
 # Project specific
 logs/
+# Ignora tudo dentro de data, mas mantém as pastas básicas e os arquivos .gitkeep
+# Permite a pasta samples para demonstração
+!data/samples/
+data/input/*
+data/output/*
+!data/input/.gitkeep
+!data/output/.gitkeep
+*.xlsx
 
 # OS stuff
 .DS_Store
