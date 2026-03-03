@@ -15,7 +15,6 @@ data/input/*
 data/output/*
 !data/input/.gitkeep
 !data/output/.gitkeep
-*.xlsx
 
 # OS stuff
 .DS_Store
