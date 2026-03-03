@@ -1,6 +1,23 @@
 # Extrator de Dados de Escolas (RPA)
 
-Solução de automação (RPA) desenvolvida em Python para otimizar o processamento de relatórios comerciais. O projeto automatiza a leitura de centenas de arquivos PDF, extraindo metadados dos nomes dos arquivos e dados estruturados do conteúdo interno, consolidando tudo em planilhas Excel prontas para análise.
+Solução de automação RPA (Robotic Process Automation) desenvolvida em Python para otimizar o processamento de relatórios comerciais. O projeto automatiza a leitura de centenas de arquivos PDF, extraindo metadados dos nomes dos arquivos e dados estruturados do conteúdo interno, consolidando tudo em planilhas Excel prontas para análise.
+
+### ⚠️ Problemática
+
+Como Assistente Comercial, surgiu a necessidade crítica de realizar o controle detalhado de escolas **adotantes** vs. **não adotantes** segmentado por divulgador. No entanto, o sistema corporativo atual apresenta limitações:
+
+* **Ausência de Relatórios Consolidados:** O sistema não fornece uma visão unificada que diferencie o status de adoção escola por escola em um único documento.
+* **Processo Fragmentado:** A única forma de obter esses dados é através da emissão de múltiplos relatórios PDF separados (um para adotantes e outro para não adotantes por divulgador).
+* **Carga de Trabalho Manual:** Consolidar manualmente centenas desses PDFs em uma planilha única para análise estratégica consumiria horas de trabalho repetitivo, sendo altamente passível de erros humanos.
+
+### ✅ Solução (RPA)
+
+Este projeto implementa um fluxo de **RPA (Robotic Process Automation)** que elimina o trabalho manual e garante 100% de precisão nos dados:
+
+* **Automação de Ponta a Ponta:** O robô varre as pastas de relatórios, identifica o divulgador e o status de adoção (extraídos inteligentemente do nome do arquivo) e lê o conteúdo interno de cada PDF.
+* **Extração com Regex:** Utiliza Expressões Regulares avançadas para capturar o nome exato e o código de cada escola, independentemente de variações na formatação do PDF.
+* **Consolidação Inteligente:** O sistema une os dados de todos os relatórios processados em uma única estrutura de dados (DataFrame), gerando um arquivo Excel final pronto para tomadas de decisão comercial.
+* **Alta Performance:** Graças ao processamento paralelo, o que levaria horas para ser feito manualmente é concluído em poucos segundos.
 
 ## 📁 Estrutura do Projeto
 
@@ -55,5 +72,3 @@ python -m src.main data/input/NOME_DA_PASTA
 * **Arquitetura Profissional**: Estrutura de diretórios organizada (src/, data/, logs/), facilitando a manutenção e escala.
 * **Monitoramento**: Sistema de logging detalhado para auditoria de processos e tratamento de erros.
 * **Interface Amigável**: Acompanha script de lote (.bat) para execução simplificada por usuários finais no Windows.
-
-
