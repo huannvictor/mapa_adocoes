@@ -1,4 +1,4 @@
-# Extrator de Dados de Escolas (RPA)
+# MapaStatus (RPA)
 
 Solução de automação RPA (Robotic Process Automation) desenvolvida em Python para otimizar o processamento de relatórios comerciais. O projeto automatiza a leitura de centenas de arquivos PDF, extraindo metadados dos nomes dos arquivos e dados estruturados do conteúdo interno, consolidando tudo em planilhas Excel prontas para análise.
 
@@ -22,7 +22,7 @@ Este projeto implementa um fluxo de **RPA (Robotic Process Automation)** que eli
 ## 📁 Estrutura do Projeto
 
 ```text
-mapa-adocoes/
+MapaStatus/
 ├── data/                   # Centraliza todos os arquivos de dados
 │   ├── input/              # [🔐 privado] Coloque aqui as pastas com os PDFs
 │   ├── output/             # [🔐 privado] Local onde os arquivos Excel (.xlsx) são gerados

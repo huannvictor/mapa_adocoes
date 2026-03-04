@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 echo ============================================================
-echo      EXTRATOR DE DADOS DE ESCOLAS - RPA ESCOLAR
+echo                      MAPASTATUS - RPA
 echo ============================================================
 echo.
 
